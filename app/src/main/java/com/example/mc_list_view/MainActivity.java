@@ -35,12 +35,13 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,studentlist);
         lv.setAdapter(arrayAdapter);
-btn.setOnClickListener(new View.OnClickListener() {
-    @Override
-    public void onClick(View view) {
-        Intent intent=new Intent(MainActivity.this,MainActivity2.class);
-        startActivity(intent);
-    }
-});
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
