@@ -2,7 +2,9 @@ package com.example.mc_list_view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -33,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,studentlist);
         lv.setAdapter(arrayAdapter);
-
+btn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent=new Intent(MainActivity.this,MainActivity2.class);
+        startActivity(intent);
+    }
+});
     }
 }
