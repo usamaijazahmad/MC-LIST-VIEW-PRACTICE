@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ListView lv;
+    Button btn;
     ArrayList<String> studentlist= new ArrayList<String>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lv=findViewById(R.id.listview);
+        btn=findViewById(R.id.btn);
 
         studentlist.add("Usama");
         studentlist.add("Maaz");

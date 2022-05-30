@@ -10,8 +10,22 @@
         android:id="@+id/listview"
         android:layout_width="343dp"
         android:layout_height="565dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="158dp"
+        android:text="Add data dynamically"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview" />
 </androidx.constraintlayout.widget.ConstraintLayout>
